@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Student_v1</string>
+    <string name="login_btn">Login using Google</string>
+    <string name="logout">Logout</string>
+    <string name="uid_tv">uid:</string>
+    <string name="email_tv">email:</string>
+    <string name="generate_qr">Generate QR Code</string>
+</resources>

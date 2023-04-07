@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.student_v1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="STUDENT"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true">
+        <activity
+            android:name=".ViewEvents"
+            android:exported="false"
+            android:theme="@style/Theme.StudentApp"/>
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.StudentApp"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.StudentApp"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
