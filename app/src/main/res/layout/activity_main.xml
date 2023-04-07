@@ -7,28 +7,35 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/qr_btn"
-        style="@style/button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:includeFontPadding="false"
-        android:text="@string/generate_qr"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
-    <Button
-        android:id="@+id/events_btn"
-        style="@style/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:includeFontPadding="false"
-        android:text="View Events"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/qr_btn"
+            style="@style/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:text="@string/generate_qr" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/events_btn"
+            style="@style/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:padding="2dp"
+            android:text="View Events" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/welcome_tv"
@@ -39,45 +46,6 @@
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/uid_tv"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="20dp"-->
-    <!--        android:fontFamily="@font/inter_bold"-->
-    <!--        android:text="@string/uid_tv"-->
-    <!--        android:theme="@style/info_title.Bold"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/welcome_tv" />-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/uid_tv2"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:theme="@style/info_title"-->
-    <!--        android:fontFamily="@font/inter"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/uid_tv" />-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/email_tv"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="56dp"-->
-    <!--        android:text="@string/email_tv"-->
-    <!--        android:theme="@style/info_title.Bold"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/welcome_tv"/>-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/email_tv2"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/email_tv"-->
-    <!--        style="@style/info_title"-->
-    <!--        />-->
 
     <TextView
         android:id="@+id/email_tv"

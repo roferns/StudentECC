@@ -98,6 +98,7 @@ public class ViewEvents extends BaseActivity implements AdapterView.OnItemSelect
                         while (attended.remove(null)) {
                         }
                     }
+
                     Log.d("lol", "array data "+attended);
                 }
             }

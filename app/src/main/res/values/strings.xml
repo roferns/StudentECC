@@ -4,5 +4,5 @@
     <string name="logout">Logout</string>
     <string name="uid_tv">uid:</string>
     <string name="email_tv">email:</string>
-    <string name="generate_qr">Generate QR Code</string>
+    <string name="generate_qr">QR Code</string>
 </resources>
