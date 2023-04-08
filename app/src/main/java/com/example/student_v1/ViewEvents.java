@@ -60,6 +60,8 @@ public class ViewEvents extends BaseActivity implements AdapterView.OnItemSelect
 
     int spinnerValue=101;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -159,6 +161,18 @@ public class ViewEvents extends BaseActivity implements AdapterView.OnItemSelect
                             }
                             else if(dateComparisonFlag == 0) //todays
                             {
+                                if (spinnerValue==103) { //attended tab
+                                    if (attended.contains(i + "")) {
+                                        events.add(new Event(i + "",
+                                                ((HashMap) value.get(i)).get("name") + "",
+                                                ((HashMap) value.get(i)).get("department") + "",
+                                                ((HashMap) value.get(i)).get("venue") + "",
+                                                ((HashMap) value.get(i)).get("faculty") + "",
+                                                ((HashMap) value.get(i)).get("points") + "",
+                                                ((HashMap) value.get(i)).get("date") + "",
+                                                ((HashMap) value.get(i)).get("time") + ""));
+                                    }
+                                }
                                 if (spinnerValue==100){ //todaysevents
                                     events.add(new Event(i + "",
                                             ((HashMap) value.get(i)).get("name") + "",
